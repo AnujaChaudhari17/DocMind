@@ -90,6 +90,9 @@ st.markdown("Context-Aware RAG with **Groq**")
 
 with st.sidebar:
     api_key = st.text_input("Enter Groq API Key:", type="password")
+    st.markdown("[👉 **Get a free Groq API Key**](https://console.groq.com/keys)")
+    
+    st.divider()
     uploaded_files = st.file_uploader("Upload Policies", type=["pdf", "txt"], accept_multiple_files=True)
     if st.button("Clear Chat History"):
         st.session_state.messages = []
